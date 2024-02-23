@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-10</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 30fr 40fr 30fr;
+        grid-template-columns: 25fr 25fr 25fr 25fr;
+        gap: 10px;
+        grid-template-areas:
+          "First Second Third Fourth"
+          "Fifth Fifth Sixth Sixth"
+          "Seventh Eighth Ninth Tenth";
+      }
+      .box-1 {
+        background-color: rebeccapurple;
+        grid-area: First;
+      }
+      .box-2 {
+        background-color: blue;
+        grid-area: Second;
+      }
+      .box-3 {
+        background-color: gold;
+        grid-area: Third;
+      }
+      .box-4 {
+        background-color: red;
+        grid-area: Fourth;
+      }
+      .box-5 {
+        background-color: green;
+        grid-area: Fifth;
+      }
+      .box-6 {
+        background-color: orange;
+        grid-area: Sixth;
+      }
+      .box-7 {
+        background-color: pink;
+        grid-area: Seventh;
+      }
+      .box-8 {
+        background-color: rgb(45, 145, 226);
+        grid-area: Eighth;
+      }
+      .box-9 {
+        background-color: aqua;
+        grid-area: Ninth;
+      }
+      .box-10 {
+        background-color: yellow;
+        grid-area: Tenth;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">First</div>
+      <div class="box-2">Second</div>
+      <div class="box-3">Third</div>
+      <div class="box-4">Fourth</div>
+      <div class="box-5">Fifth</div>
+      <div class="box-6">Sixth</div>
+      <div class="box-7">Seventh</div>
+      <div class="box-8">Eighth</div>
+      <div class="box-9">Ninth</div>
+      <div class="box-10">Tenth</div>
+    </div>
+  </body>
+</html>
