@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid - 11</title>
+    <style>
+      .container {
+        height: 98vh;
+        display: grid;
+        grid-template-columns: 26fr 37fr 37fr;
+        grid-template-rows: 10fr 40fr 40fr 10fr;
+        gap: 10px;
+        grid-template-areas:
+          "Header Header Header"
+          "Sidebar Content1 Content1"
+          "Sidebar Content2 Content3"
+          "Footer Footer Footer";
+      }
+      header {
+        background-color: rebeccapurple;
+        grid-area: Header;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+      }
+      section {
+        background-color: blue;
+        grid-area: Sidebar;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+      }
+      .content-1 {
+        background-color: orange;
+        grid-area: Content1;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+      }
+      .content-2 {
+        background-color: red;
+        grid-area: Content2;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+      }
+      .content-3 {
+        background-color: green;
+        grid-area: Content3;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+      }
+      footer {
+        background-color: rgb(10, 157, 206);
+        grid-area: Footer;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <section>Sidebar</section>
+      <div class="content-1">content - 1</div>
+      <div class="content-2">content - 2</div>
+      <div class="content-3">content - 3</div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
