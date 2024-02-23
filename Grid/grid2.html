@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid-2</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 33fr 33fr 33fr;
+        grid-template-rows: auto;
+        gap: 10px;
+      }
+      .box-1 {
+        background-color: rebeccapurple;
+      }
+      .box-2 {
+        background-color: blue;
+      }
+      .box-3 {
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">First</div>
+      <div class="box box-2">Second</div>
+      <div class="box box-3">Third</div>
+    </div>
+  </body>
+</html>
